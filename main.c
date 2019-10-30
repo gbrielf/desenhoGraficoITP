@@ -11,18 +11,18 @@ int main(){
 	printf("Autores:\nLucas Fernandes\nArthur Learth\nGabriel Furtado\n");
 	printf("*************************************\n\n");
 
-	char entrada[20];
-
+	char entrada[10];
+	
 	while(true){
 		setbuf(stdin, NULL);
-		fgets(entrada, 20, stdin);
+		scanf("%s", entrada);
 
 		// condição de parada do loop
-		if (!strncmp(entrada, "sair", 4)){
-			printf("saindo\n");
+		if (!strcmp(entrada, "sair")){
 			break;
 		}
 	}
 
+	freeAll();
 	return 0;
 }
