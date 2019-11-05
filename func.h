@@ -11,9 +11,8 @@ void lerOperacao(char *in){
 	/*Comando criar imagem*/
 	if (strcmp(in, "image") == 0){
 
-		int *tamanhoDaImagem;
-		tamanhoDaImagem = (int *) malloc(2 * sizeof(int));
-
+		int *tamanhoDaImagem = tamanhoDaImagem = (int *) malloc(2 * sizeof(int));
+		
 		scanf("%d %d", &tamanhoDaImagem[0], tamanhoDaImagem[1]);
 		listarPixels(tamanhoDaImagem[0], tamanhoDaImagem[1]);
 	}
@@ -34,8 +33,7 @@ void listarPixels(int sizeX, int sizeY){
 	int numeroDePixels = sizeX * sizeY;
 
 	/* criando vetor de ponteiros de alocação dinâmica */
-	int **listaDePixels;
-	listaDePixels = (int **) malloc(numeroDePixels * sizeof(int *));
+	int **listaDePixels = (int **) malloc(numeroDePixels * sizeof(int *));;
 
 	/* criando vetores de 3 posições de alocação dinâmica */
 	for (int i = 0; i < numeroDePixels; i++){
