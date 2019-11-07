@@ -2,10 +2,13 @@ DESENHO GRÁFICO - ITP
 
 ALGORITIMO DE FUNCIONAMENTO
 
-1. Leitura de entrada (main)
-2. Função intérprete recebe entrada, identifica o comando e lê os parâmetros necessários
-3. Função do comando solicitado recebe os parametros lidos e executa a tarefa
-4. 
+1. Leitura de entrada do usuário
+2. Interpretação e execução do comando na main
+3. Caso o comando não seja reconhecido na main, será enviado à função intérprete
+4. A função intérprete recebe entrada, identifica o comando e executa a tarefa
+5. O comando solicitado receberá os parametros necessários para a execução
+6. A execução da tarefa ocorrerá através da manipulação da matriz de pixels
+7. Após a conclusão da tarefa, o programa retornará ao início 
 
 FUNÇÕES NECESSÁRIAS
 
